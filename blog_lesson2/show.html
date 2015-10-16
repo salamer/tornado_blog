@@ -1,0 +1,21 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{% if flag %}
+<h1 style="color:AD5A5A">your personal data:</h1>
+<h2 style="color:#ADADAD ">get method</h1>
+<p>your name:{{ name }}</p>
+<p>your age:{{ age }}</p>
+<p>your subject:{{ subject }}</p>
+{% else %}
+<h1 style="color: #F75000">the result you want</h1>
+<h2 style="color:#ADADAD">post method</h2>
+<p>{{ result }}</p>
+
+{% end %}
+
+</body>
+</html>
