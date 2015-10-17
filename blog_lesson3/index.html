@@ -1,0 +1,33 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>blog home</title>
+</head>
+<body>
+<div style="width:700px;border:2px solid #7E3D76">
+	<h1 style="color:#613030">write down your blog!</h1>
+	<div id="form">
+		<form action="" method="post">
+			<p>editor:</p>
+			<input type="text" name="editor">
+			<p>body:</p>
+			<input type="text" name="body">
+			<p></p>
+			<input type="submit" value="submit">
+		</form>
+	</div>
+	<hr>
+	<h3 style="color:#613030">blog list:</h3>
+	<div id="blog_list">
+		{% for blog in blogs%}
+		<div style="margin:3px;border:2px solid #FFDAC8;border-left:0px;border-right:0px;">
+			<p>editpr:</p>
+			<p>{{ blog['editor'] }}</p>
+			<p>blog:</p>
+			<p>{{ blog['body'] }}</p>
+		</div>
+		{% end %}
+	</div>
+</div>
+</body>
+</html>
