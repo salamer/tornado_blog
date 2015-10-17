@@ -52,10 +52,10 @@ def init_app():
 	print "app is running on http://127.0.0.1:%s" % port
 	return tornado.web.Application([
 		tornado.web.url(r"/",PageHandler),
-		tornado.web.url("/list",ListHandler),
-		tornado.web.url("/get",GetDataHandler),
-		tornado.web.url("/post",PostDataHandler),
-		tornado.web.url("/show",ResultShowHandler),
+		tornado.web.url(r"/list",ListHandler),
+		tornado.web.url(r"/get",GetDataHandler),
+		tornado.web.url(r"/post",PostDataHandler),
+		tornado.web.url(r"/show",ResultShowHandler),
 	])
 
 if __name__=="__main__":
